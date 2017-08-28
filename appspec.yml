@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /code.sh
+    destination: /home/ec2-user/
+hooks:
+
+  ApplicationStart:
+    - location: /home/ec2-user/code.sh
+      runas: root
+
